@@ -12,8 +12,8 @@ public void thePriceOfAIsC(String name, int price) throws Throwable {
 
 @When("^I checkout (\\d+) \"([^\"]*)\"$")
 public void iCheckout(int arg1, String arg2) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+    Checkout checkout = new Checkout();
+    checkout.add(itemCount, bananaPrice);
 }
 
 @Then("^the total price should be equal to (\\d+)c$")
